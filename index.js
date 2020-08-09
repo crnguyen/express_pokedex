@@ -16,9 +16,19 @@ app.get('/', (req, res) => {
   let pokemonUrl = 'http://pokeapi.co/api/v2/pokemon?limit=896>';
   // Use request to call the API
   axios.get(pokemonUrl).then(response => {
-    console.log(response.data)
+    console.log(response.data);
     let pokemon = response.data.results;
     res.render('index', { pokemon: pokemon.slice(0, 896) });
+  });
+});
+
+app.get('/favorites', (req, res) => {
+  let pokemonUrl = 'http://pokeapi.co/api/v2/pokemon?limit=896>';
+  // Use request to call the API
+  axios.get(pokemonUrl).then(response => {
+    console.log(response.data);
+    let pokemon = response.data.results;
+    res.render('favorites', { pokemon: pokemon.slice(0, 896) });
   });
 });
 

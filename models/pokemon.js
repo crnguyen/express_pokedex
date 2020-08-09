@@ -21,3 +21,7 @@ module.exports = (sequelize, DataTypes) => {
   });
   return pokemon;
 };
+
+/**
+* When button is clicked add favorite pokemon to favorites list 
+*/
