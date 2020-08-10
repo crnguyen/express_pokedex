@@ -77,12 +77,13 @@ img {
     background-image:url("https://archive-media-1.nyafuu.org/vp/image/1468/39/1468394205822.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: center;
     background-attachment: fixed;
+    overflow-y: scroll;
+    height: 650px;
+    margin: 0 auto;
 }
 
 .errorPageDetails {
-    background-color: white;
     color: black;
     padding: 10px;
 }

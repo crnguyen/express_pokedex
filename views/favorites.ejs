@@ -7,6 +7,12 @@
       <form method="POST" action="/pokemon">
         <input hidden type="text" name="name" value="<%= p.name %>">
       </form>
+
+      <!-- delete button is not working -->
+      <form method="POST" action="/pokemon?_method=DELETE"">
+        <button class="btn btn-primary" type="submit">Remove from list</button>
+      </form>
+
   <% }); %>
 </div>
 
