@@ -1,20 +1,26 @@
 <div class="showPage">
-
-<img src="<%= pokedata.sprites.front_default %> " alt = "pokemon">
+<h1 class="pokeNameDetails"><%= pokedata.name.toUpperCase() %> </h1>
+<img src="<%= pokedata.sprites.front_shiny %> " alt = "pokemon">
 
 <div class="pokeDetails">
 <strong>Height:</strong> <%= pokedata.height %>
-<br>
-<br>
 
+<br>
+<strong>Weight:</strong> <%= pokedata.weight %>
+
+<br>
 <strong>Some Abilities:</strong>
 <br>
  <%= pokedata.abilities[0].ability.name %>
  <br>
  <%= pokedata.abilities[1].ability.name %>
-
  <br>
  <br>
+ <strong>Some Moves:</strong>
+ <br>
+ <%= pokedata.moves[0].move.name %>
+ <br>
+ <%= pokedata.moves[1].move.name %>
 
 </div>
 </div>

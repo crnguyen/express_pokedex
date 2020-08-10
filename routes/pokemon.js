@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
     const foundPokemon = await db.pokemon.findAll(); //grab info from pokemon data table
     res.render("favorites", {pokemon: foundPokemon})
   } catch (err){
-    res.send("Error pokemon deosnt exist");
+    res.render("error");
   }
 });
 
@@ -25,7 +25,7 @@ router.post('/', async (req, res) => {
     })
     res.redirect("/pokemon")
   } catch (err) {
-    res.send("error");
+    res.render("error");
     //also render an error page
   }
  
@@ -40,7 +40,7 @@ router.get("/:name", async (req,res) => {
       res.render("show", {pokedata: pokemonResults})
     }
   } catch (err) {
-    res.send("error");
+    res.render("error");
   }
 })
 

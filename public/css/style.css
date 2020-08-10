@@ -40,3 +40,21 @@ body {
 img {
     width: 150px;
 }
+
+.pokeNameDetails {
+    color: white;
+}
+
+.errorPage {
+    background-image:url("https://archive-media-1.nyafuu.org/vp/image/1468/39/1468394205822.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-attachment: fixed;
+}
+
+.errorPageDetails {
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
