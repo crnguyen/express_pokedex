@@ -45,5 +45,3 @@ router.get("/:name", async (req,res) => {
 })
 
 module.exports = router;
-
-//this is whre we'll be doing our pokemon route

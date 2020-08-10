@@ -1,3 +1,42 @@
 body {
-    background-color: grey;
+    background-image: url("https://wallpaperaccess.com/full/174922.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 10px;
+}
+
+.pokeDetails {
+    background-color: white;
+    
+}
+
+.favorites {
+    background-color: white;
+    width: 40%;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+
+.container {
+    background-color: white;
+    width: 60%;
+    margin: 0 auto;
+    opacity: 0.8;
+    color: black;
+}
+
+.showPage {
+    background-color: black;
+    padding: 20px;
+    width: 40%;
+    margin: 10px auto;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+img {
+    width: 150px;
 }

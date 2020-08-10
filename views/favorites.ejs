@@ -1,4 +1,5 @@
 <!-- Favorite pokemon will appear on this page -->
+<div class="favorites">
 <h2> Favorite Pokemon</h2>
 <% pokemon.forEach(function(p) { %>
       <a href = "/pokemon/<%= p.name %> " ><h2><%= p.name %></h2> </a>
@@ -7,4 +8,5 @@
         <input hidden type="text" name="name" value="<%= p.name %>">
       </form>
   <% }); %>
+</div>
 
