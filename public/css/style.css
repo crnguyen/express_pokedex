@@ -10,7 +10,31 @@ body {
 
 .pokeDetails {
     background-color: white;
-    
+    overflow-y: scroll;
+    height: 310px;  
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: teal;
+}
+
+#button:hover {
+    background-color: black;
+    color: white;
+    border: black 2px solid;
+    transition: ease-out;
+}
+
+.createdBy {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #4EB6AC;
+    padding: 5px;
 }
 
 .favorites {
@@ -18,6 +42,8 @@ body {
     width: 40%;
     margin: 0 auto;
     opacity: 0.8;
+    overflow-y: scroll;
+    height: 650px;
 }
 
 .container {
@@ -26,6 +52,8 @@ body {
     margin: 0 auto;
     opacity: 0.8;
     color: black;
+    overflow-y: scroll;
+    height: 650px;
 }
 
 .showPage {

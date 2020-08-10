@@ -3,7 +3,6 @@ const router = express.Router();
 const db = require("../models");
 const axios = require("axios");
 
-// GET /pokemon - return a page with favorited Pokemon
 router.get('/', async (req, res) => {
   try {
     const foundPokemon = await db.pokemon.findAll(); //grab info from pokemon data table
@@ -13,10 +12,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-//add pokemon to database
-// POST /pokemon - receive the name of a pokemon and add it to the database
 router.post('/', async (req, res) => {
-  // TODO: Get form data and add a new record to DB
   try {
     await db.pokemon.findOrCreate({
       where: {
@@ -25,10 +21,8 @@ router.post('/', async (req, res) => {
     })
     res.redirect("/pokemon")
   } catch (err) {
-    res.render("error");
-    //also render an error page
+    res.render("error"); //also render an error page
   }
- 
 });
 
 router.get("/:name", async (req,res) => {
