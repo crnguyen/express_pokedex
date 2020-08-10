@@ -7,6 +7,9 @@ body {
     text-align: center;
     padding: 10px;
 }
+.backToHomepage {
+    font-size: 20px;
+}
 
 .pokeDetails {
     background-color: white;
@@ -39,27 +42,34 @@ a:hover {
 
 .favorites {
     background-color: white;
-    width: 40%;
+    width: 900px;
     margin: 0 auto;
     opacity: 0.8;
+    height: 150px;
+}
+
+.favoritesStatic {
+    background-color: white;
+    width: 900px;
+    margin: 0 auto;
+    opacity: 0.8;
+    height: 990px;
     overflow-y: scroll;
-    height: 650px;
 }
 
 .container {
     background-color: white;
-    width: 60%;
+    width: 900px;
     margin: 0 auto;
     opacity: 0.8;
     color: black;
-    overflow-y: scroll;
-    height: 650px;
+    height: 150px;
 }
 
 .showPage {
     background-color: black;
     padding: 20px;
-    width: 40%;
+    width: 900px;
     margin: 10px auto;
     font-size: 20px;
     opacity: 0.8;
@@ -73,13 +83,22 @@ img {
     color: white;
 }
 
+.containerStatic {
+    overflow-y: scroll;
+    height: 950px;
+    opacity: 0.8;
+    background-color: white;
+    width: 900px;
+    margin: 0 auto;
+}
+
 .errorPage {
     background-image:url("https://archive-media-1.nyafuu.org/vp/image/1468/39/1468394205822.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-y: scroll;
-    height: 650px;
+    height: 630px;
     margin: 0 auto;
 }
 

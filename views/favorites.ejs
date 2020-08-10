@@ -1,6 +1,10 @@
 <!-- Favorite pokemon will appear on this page -->
 <div class="favorites">
+<a href="http://localhost:3000" class="backToHomepage">Back to Homepage</a>
 <h2> Favorite Pokemon</h2>
+</div>
+
+<div class="favoritesStatic">
 <% pokemon.forEach(function(p) { %>
       <a href= "/pokemon/<%= p.name %> "><h4><%= p.name %></h4> </a>
 

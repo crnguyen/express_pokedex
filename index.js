@@ -22,23 +22,6 @@ app.get('/', (req, res) => {
   });
 });
 
-// app.get("/favorites", (req, res) => {
-//   res.send("this is the favorites page")
-
-//   // db.pokemon.findOrCreate().then(function(poke) {
-//   //   console.log("Found:", poke.name)
-//   // })
-
-
-//   // let pokemonFAV = "/pokemon";
-//   // // Use request to call the API
-//   // axios.get(pokemonFAV).then(response => {
-//   //   console.log(response.data);
-//   //   let pokemon = response.data.results;
-//   //   res.render('favorites', { pokemon: pokemon});
-//   // });
-// });
-
 // Imports all routes from the pokemon routes file
 app.use('/pokemon', require('./routes/pokemon'));
 
