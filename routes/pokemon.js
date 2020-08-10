@@ -4,7 +4,7 @@ const db = require("../models");
 const axios = require("axios");
 const methodOverride = require("method-override");
 const app = express();
-app.use(methodOverride("_method"));
+router.use(methodOverride("_method"));
 
 router.get('/', async (req, res) => {
   try {
@@ -41,11 +41,12 @@ router.get("/:name", async (req,res) => {
   }
 })
 
-router.delete("/", async (req, res) => {
+//GOT THIS TO WORK!!
+router.delete("/:name", async (req, res) => {
   try {
     await db.pokemon.destroy({
       where: {
-        name: req.body.name,
+        name: req.params.name
       },
     });
     res.redirect("/pokemon");
